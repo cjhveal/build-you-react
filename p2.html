@@ -94,9 +94,9 @@
       }
 
       // UPDATE RENDER CALL
-      function mount(elem, tree) {
+      function mount(elem, store, tree) {
         removeChildNodes(elem);
-        elem.appendChild(tree.render());
+        elem.appendChild(tree.render(store));
       }
 
 
